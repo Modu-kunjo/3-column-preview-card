@@ -1,0 +1,113 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+}
+
+h1 {
+    text-transform: uppercase;
+    font-family: 'Big Shoulders Display';
+}
+
+p {
+    font-family: 'Lexend Deca';
+}
+
+main {
+    width: 1440px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    justify-content: center;
+}
+
+.container {
+    display: flex;
+    width: 700px;
+    height: 400px;
+    background: hsl(0, 0%, 95%);
+    border-radius: 10px;
+}
+
+.container > div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 20px;
+    color:hsla(0, 0%, 100%, 0.75);
+}
+
+.sedans {
+    background: hsl(31, 77%, 52%);
+    border-radius: 10px 0 0 10px;
+}
+
+.sedans > .button {
+    color: hsl(31, 77%, 52%);
+}
+
+.suvs {
+    background: hsl(184, 100%, 22%);
+}
+
+.suvs > .button {
+    color: hsl(184, 100%, 22%);
+}
+
+.luxury {
+    background: hsl(179, 100%, 13%);
+    border-radius: 0 10px 10px 0;
+}
+
+.luxury > .button {
+    color: hsl(179, 100%, 13%)
+}
+
+.button {
+    display: flex;
+    background: hsl(0, 0%, 95%);
+    height: 40px;
+    width: 150px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+}
+
+@media  screen and (max-width: 375px) {
+
+  main {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 375px;
+    height: 200vh;
+    gap: 4px;
+  }
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    width: 250px;
+    height: fit-content;
+    margin-top: 15px;
+  }
+
+   .box {
+    height: 350px;
+   }
+
+    .luxury {
+        border-radius: 0 0 10px 10px;
+    }
+
+    .sedans {
+        border-radius: 10px 10px 0 0;
+    }
+}
